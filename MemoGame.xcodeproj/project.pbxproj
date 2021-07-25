@@ -13,6 +13,10 @@
 		9AD13325269C9F2D00E1FC86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD13324269C9F2D00E1FC86 /* Preview Assets.xcassets */; };
 		9AD1332D269CA1D500E1FC86 /* MemoGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1332C269CA1D500E1FC86 /* MemoGameModel.swift */; };
 		9AD1332F269CA2F200E1FC86 /* MemoryGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1332E269CA2F200E1FC86 /* MemoryGameViewModel.swift */; };
+		9AF94ABB26ACD1FB00E9E44B /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF94ABA26ACD1FB00E9E44B /* Grid.swift */; };
+		9AF94ABD26ACD8B500E9E44B /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF94ABC26ACD8B500E9E44B /* GridLayout.swift */; };
+		9AF94ABF26ACDDDA00E9E44B /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF94ABE26ACDDDA00E9E44B /* Array+Identifiable.swift */; };
+		9AF94AC126AD098C00E9E44B /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF94AC026AD098C00E9E44B /* Array+Only.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9AD13326269C9F2D00E1FC86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD1332C269CA1D500E1FC86 /* MemoGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoGameModel.swift; sourceTree = "<group>"; };
 		9AD1332E269CA2F200E1FC86 /* MemoryGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameViewModel.swift; sourceTree = "<group>"; };
+		9AF94ABA26ACD1FB00E9E44B /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		9AF94ABC26ACD8B500E9E44B /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		9AF94ABE26ACDDDA00E9E44B /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
+		9AF94AC026AD098C00E9E44B /* Array+Only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				9AD1331D269C9F2B00E1FC86 /* MemoGameApp.swift */,
+				9AF94ABC26ACD8B500E9E44B /* GridLayout.swift */,
+				9AF94ABA26ACD1FB00E9E44B /* Grid.swift */,
+				9AF94ABE26ACDDDA00E9E44B /* Array+Identifiable.swift */,
+				9AF94AC026AD098C00E9E44B /* Array+Only.swift */,
 				9AD1331F269C9F2B00E1FC86 /* MemoGameView.swift */,
 				9AD1332E269CA2F200E1FC86 /* MemoryGameViewModel.swift */,
 				9AD1332C269CA1D500E1FC86 /* MemoGameModel.swift */,
@@ -147,7 +159,11 @@
 				9AD13320269C9F2B00E1FC86 /* MemoGameView.swift in Sources */,
 				9AD1332D269CA1D500E1FC86 /* MemoGameModel.swift in Sources */,
 				9AD1331E269C9F2B00E1FC86 /* MemoGameApp.swift in Sources */,
+				9AF94ABD26ACD8B500E9E44B /* GridLayout.swift in Sources */,
+				9AF94ABB26ACD1FB00E9E44B /* Grid.swift in Sources */,
+				9AF94ABF26ACDDDA00E9E44B /* Array+Identifiable.swift in Sources */,
 				9AD1332F269CA2F200E1FC86 /* MemoryGameViewModel.swift in Sources */,
+				9AF94AC126AD098C00E9E44B /* Array+Only.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

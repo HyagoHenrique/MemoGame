@@ -9,16 +9,16 @@ import SwiftUI
 
 struct MemoGameView: View {
     @ObservedObject var viewModel: EmojiMemoryGame
-
+    
     var body: some View {
-        HStack(content: {
-            ForEach(viewModel.cards) { card in
-                CardView(card: card).onTapGesture{
-                    viewModel.choose(card: card)
-                }
-                
+        Grid(viewModel.cards) { card in
+            CardView(card: card).onTapGesture{
+                viewModel.choose(card: card)
             }
-        })
+            .padding(5)
+            
+            
+        }
         .padding()
         .foregroundColor(.orange)
     }
@@ -39,23 +39,26 @@ struct CardView: View {
             if card.isFaceUp {
                 RoundedRectangle(cornerRadius: conerRadius).fill(Color.white)
                 RoundedRectangle(cornerRadius: conerRadius).stroke(lineWidth: edgeLineWidth)
-                            Text(card.content)
+                Text(card.content)
             } else {
-                RoundedRectangle(cornerRadius: conerRadius).fill()
+                if !card.isMatched {
+                    RoundedRectangle(cornerRadius: conerRadius).fill()
+                }
             }
-        
+            
         }.font(Font.system(size: fontSize(for: size)))
     }
     
     //Mark - Drawing Constants
-    let conerRadius: CGFloat = 10.0
-    let edgeLineWidth: CGFloat = 3
-    func fontSize(for size: CGSize) -> CGFloat {
-        min(size.width, size.height) * 0.75
+    private  let conerRadius: CGFloat = 10.0
+    private  let edgeLineWidth: CGFloat = 3
+    private  func fontSize(for size: CGSize) -> CGFloat {
+                min(size.width, size.height) * 0.75
     }
-
+    
     
 }
+
 
 
 

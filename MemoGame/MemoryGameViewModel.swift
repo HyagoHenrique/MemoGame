@@ -13,8 +13,8 @@ class EmojiMemoryGame: ObservableObject {
     @Published private var model: MemoryGameModel<String> = createMemoryGame()
     
     
-    static func createMemoryGame() -> MemoryGameModel<String> {
-        let emojis = ["🔥","🤪","🥴"]
+    private static func createMemoryGame() -> MemoryGameModel<String> {
+        let emojis = ["🔥","🤪","🥴","🧐", "😝"]
         return MemoryGameModel<String>(numbersOfPairsOfCards: emojis.count) { pairIndex  in
             return emojis[pairIndex]
         }
