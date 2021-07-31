@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A175FBA26B5DA8E007B41A3 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A175FB926B5DA8E007B41A3 /* Pie.swift */; };
+		9A175FBC26B5E0E7007B41A3 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A175FBB26B5E0E7007B41A3 /* Cardify.swift */; };
 		9AD1331E269C9F2B00E1FC86 /* MemoGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1331D269C9F2B00E1FC86 /* MemoGameApp.swift */; };
 		9AD13320269C9F2B00E1FC86 /* MemoGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1331F269C9F2B00E1FC86 /* MemoGameView.swift */; };
 		9AD13322269C9F2D00E1FC86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD13321269C9F2D00E1FC86 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A175FB926B5DA8E007B41A3 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		9A175FBB26B5E0E7007B41A3 /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 		9AD1331A269C9F2B00E1FC86 /* MemoGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD1331D269C9F2B00E1FC86 /* MemoGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoGameApp.swift; sourceTree = "<group>"; };
 		9AD1331F269C9F2B00E1FC86 /* MemoGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoGameView.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				9AF94ABE26ACDDDA00E9E44B /* Array+Identifiable.swift */,
 				9AF94AC026AD098C00E9E44B /* Array+Only.swift */,
 				9AD1331F269C9F2B00E1FC86 /* MemoGameView.swift */,
+				9A175FBB26B5E0E7007B41A3 /* Cardify.swift */,
+				9A175FB926B5DA8E007B41A3 /* Pie.swift */,
 				9AD1332E269CA2F200E1FC86 /* MemoryGameViewModel.swift */,
 				9AD1332C269CA1D500E1FC86 /* MemoGameModel.swift */,
 				9AD13321269C9F2D00E1FC86 /* Assets.xcassets */,
@@ -159,10 +165,12 @@
 				9AD13320269C9F2B00E1FC86 /* MemoGameView.swift in Sources */,
 				9AD1332D269CA1D500E1FC86 /* MemoGameModel.swift in Sources */,
 				9AD1331E269C9F2B00E1FC86 /* MemoGameApp.swift in Sources */,
+				9A175FBA26B5DA8E007B41A3 /* Pie.swift in Sources */,
 				9AF94ABD26ACD8B500E9E44B /* GridLayout.swift in Sources */,
 				9AF94ABB26ACD1FB00E9E44B /* Grid.swift in Sources */,
 				9AF94ABF26ACDDDA00E9E44B /* Array+Identifiable.swift in Sources */,
 				9AD1332F269CA2F200E1FC86 /* MemoryGameViewModel.swift in Sources */,
+				9A175FBC26B5E0E7007B41A3 /* Cardify.swift in Sources */,
 				9AF94AC126AD098C00E9E44B /* Array+Only.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

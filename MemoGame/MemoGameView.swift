@@ -34,37 +34,30 @@ struct CardView: View {
         }
     }
     
+    @ViewBuilder
     func body(for size: CGSize) -> some View {
-        ZStack() {
-            if card.isFaceUp {
-                RoundedRectangle(cornerRadius: conerRadius).fill(Color.white)
-                RoundedRectangle(cornerRadius: conerRadius).stroke(lineWidth: edgeLineWidth)
-                Text(card.content)
-            } else {
-                if !card.isMatched {
-                    RoundedRectangle(cornerRadius: conerRadius).fill()
-                }
-            }
-            
-        }.font(Font.system(size: fontSize(for: size)))
+        if(card.isFaceUp || !card.isMatched){
+            ZStack() {
+                Pie(startAngle: Angle.degrees(0-90), endAngle: Angle.degrees(110-90), clockwise: true).padding(5).opacity(0.4)
+                Text(card.content).font(Font.system(size: fontSize(for: size)))
+            }.cardify(isFaceUp: card.isFaceUp)
+             
+        }
     }
-    
-    //Mark - Drawing Constants
-    private  let conerRadius: CGFloat = 10.0
-    private  let edgeLineWidth: CGFloat = 3
-    private  func fontSize(for size: CGSize) -> CGFloat {
-                min(size.width, size.height) * 0.75
-    }
-    
-    
 }
 
-
-
-
+//Mark - Drawing Constants
+private  func fontSize(for size: CGSize) -> CGFloat {
+            min(size.width, size.height) * 0.7
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MemoGameView(viewModel: EmojiMemoryGame())
+        
+        let game = EmojiMemoryGame()
+        game.choose(card: game.cards[0])
+        
+        return MemoGameView(viewModel: game)
     }
 }
+
