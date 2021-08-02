@@ -64,6 +64,7 @@ struct CardView: View {
                         Pie(startAngle: Angle.degrees(0-90), endAngle: Angle.degrees(-card.bonusRemaining*360-90), clockwise: true)
                     }
                 }.padding(5).opacity(0.4)
+                .transition(.identity)
                 Text(card.content).font(Font.system(size: fontSize(for: size))).rotationEffect(Angle.degrees(card.isMatched ? 360 : 0)).animation(card.isMatched ? Animation.linear(duration: 2).repeatForever(autoreverses: false) : .default)
             }.cardify(isFaceUp: card.isFaceUp)
             .transition(AnyTransition.scale)
